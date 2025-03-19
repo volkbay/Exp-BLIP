@@ -76,6 +76,7 @@ class Blip2OPT(Blip2Base):
             layer.intermediate = None
 
         self.opt_tokenizer = AutoTokenizer.from_pretrained(opt_model, use_fast=False)
+        cache_opt_path = opt_model  # NOTE
         self.opt_model = OPTForCausalLM.from_pretrained(
             cache_opt_path, torch_dtype=torch.float16 
         )

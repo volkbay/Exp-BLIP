@@ -436,6 +436,7 @@ def create_eva_vit_g(img_size=224,drop_path_rate=0.4,use_checkpoint=False,precis
     
     incompatible_keys = model.load_state_dict(state_dict, strict=False)
 #     print(incompatible_keys)
+    dict_path = "DUMMY PLACEHOLDER"  # FIXME
     logging.info("load vision checkpoint from %s" % dict_path) # v0
     
     if precision == "fp16":
