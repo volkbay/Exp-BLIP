@@ -1,7 +1,9 @@
+batchgenerators==0.25
 contexttimer
 decord
 einops>=0.4.1
 fairscale==0.4.4
+future
 ftfy
 iopath
 ipython
@@ -15,6 +17,8 @@ pre-commit
 pycocoevalcap
 pycocotools
 python-magic
+requests-oauthlib==1.3.1
+salesforce-lavis
 scikit-image
 sentencepiece
 spacy
